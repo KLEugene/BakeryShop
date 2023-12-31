@@ -6,3 +6,13 @@ width:204px; padding:16px 24px;
 color: var(--color-primary-light);
 display: block;
 }
+.icon-button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    & svg{
+        height: 24px;
+        width: 24px;
+    }
+}
