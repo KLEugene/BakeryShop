@@ -21,4 +21,9 @@ color: var(--color-brand-dark);
     background-color: transparent;
     border: none;
     fill: var(--color-primary-light);
+
+    & svg{
+        height: 24px;
+    }
+    
 }
