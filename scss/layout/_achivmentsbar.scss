@@ -5,7 +5,23 @@
     margin-bottom: 40px;
     font-size: 14px;
     color: var(--color-primary-dark);
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        padding: 16px;
+        background-color: var(--color-brand-normal);
+        color: var(--color-primary-light);
+        margin-bottom: 90px;
+        border-radius: 0;
+        
+    }
+    
+    &__list{
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 .achivmentsbar-list__item{
-    text-align: center;
+    text-align: left;
 }
