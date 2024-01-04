@@ -1,0 +1,15 @@
+.section-title{
+    font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin-bottom: 24px;
+@media screen and (min-width:768px) {
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 42px;
+}
+}
+.section-title-center{
+    text-align: center;
+}

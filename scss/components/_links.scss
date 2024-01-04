@@ -3,7 +3,8 @@
     text-decoration: none;
     transition: color 0.3s;
 
-    &:hover {
+    &:hover, &.active {
         color: var(--color-brand-normal);
+
     }
 }

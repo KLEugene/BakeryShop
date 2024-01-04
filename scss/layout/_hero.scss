@@ -6,6 +6,9 @@ background-repeat: no-repeat;
 background-position: center top; 
 background-size: cover;
 margin-bottom: 40px;
+@media screen and (min-width:768px) {
+    margin-bottom: 0;
+}
 }
 .hero-title{
     margin-bottom: 48px;

@@ -88,7 +88,7 @@ ul {
   text-decoration: none;
   transition: color 0.3s;
 }
-.link:hover {
+.link:hover, .link.active {
   color: var(--color-brand-normal);
 }
 
@@ -141,6 +141,47 @@ ul {
   bottom: 20px;
 }
 
+.section-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 42px;
+  }
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 96px;
+  }
+}
+
+.text-accent {
+  color: var(--color-brand-normal);
+  font-weight: 600;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -151,6 +192,17 @@ ul {
   --bp-mobile:480px;
   --bp-tablet: 768px;
   --bp-desktop: 1280px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .container {
@@ -215,6 +267,11 @@ ul {
   background-size: cover;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .hero-section {
+    margin-bottom: 0;
+  }
+}
 
 .hero-title {
   margin-bottom: 48px;
@@ -264,6 +321,15 @@ ul {
 
 .achivmentsbar-list__item {
   text-align: left;
+}
+
+.image-bakerman {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .image-bakerman {
+    display: block;
+  }
 }
 
 .backdrop {

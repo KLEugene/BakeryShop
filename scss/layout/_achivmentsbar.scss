@@ -25,3 +25,10 @@
 .achivmentsbar-list__item{
     text-align: left;
 }
+
+.image-bakerman{
+    display: none;
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+}
