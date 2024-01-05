@@ -8,3 +8,14 @@
     border: 0;
     clip: rect(0 0 0 0);
   }
+
+  .flex-wrap{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (min-width:768px) {
+      gap: 32px;
+      flex-direction: row;
+    }
+  }

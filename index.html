@@ -60,7 +60,7 @@
           <button type="button" class="button hero-button">Замовити дзвінок</button>
         </div>
       </section>
-      <section id="achivmentsbar" class="achivmentsbar-section">
+      <section id="achivmentsbar" class="achivmentsbar-section section">
         <h2 class="visually-hidden">Наші досягнення</h2>
         <div class="container">
           <ul class="achivmentsbar-section__list">
@@ -70,8 +70,10 @@
           </ul>
         </div>
       </section>
-      <section id="activities" class="activities-section">
+      <section id="activities" class="activities-section section">
         <div class="container">
+          <div class="flex-wrap">
+          <div class="left-block">
           <h2 class="section-title">Новий формат традицій</h2>
           <p class="paragraph">
             <span class="text-accent text-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак
@@ -81,28 +83,40 @@
             Ми працюємо як найвідоміші мережі— <span class="text-accent">5 хвилин і замовлення готове.</span> А
             ще у наших пекарень стильний дизайн та висока якість обслуговування!
           </p>
+          </div>
+
           <img class="image-bakerman"
             srcset="./images/bakerman.jpg 1x, ./images/bakerman@2x.jpg 2x"
             src="./images/bakerman.jpg"
             alt="пекар везе батони і посміхається"
           />
         </div>
+        </div>
       </section>
-      <section id="chiefs" class="chiefs-section">
+      <section id="chiefs" class="chiefs-section section">
         <div class="container">
           <h2 class="section-title section-title-center">Наші найкращі шеф -кухарі</h2>
-          <article>
-            <h3>Настя</h3>
-            <p>Привіт, я Настя!</p>
-            <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-            <p>Я випічу для вас найсмачніщі вироби!</p>
-            <img
+          <div class="flex-wrap">
+          <article class="flex-wrap chef-card">
+            <img class="chef-card__image"
               srcset="./images/anastasia.jpg 1x, ./images/anastasia@2x.jpg 2x"
               src="./images/anastasia.jpg"
               alt=""
             />
+            <div>
+            <h3>Настя</h3>
+            <p>Привіт, я Настя!</p>
+            <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+            <p>Я випічу для вас найсмачніщі вироби!</p>
+            </div>
           </article>
-          <article>
+          <article class="flex-wrap chef-card">
+            <img class="chef-card__image"
+              srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
+              src="./images/vlad.jpg"
+              alt=""
+            />  
+            <div>
             <h3>Влад</h3>
             <p>Привіт, я Влад!</p>
             <p>
@@ -110,15 +124,12 @@
               якою ми ділимось кожен раз з Вами через нашу випічку!
             </p>
             <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-            <img
-              srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
-              src="./images/vlad.jpg"
-              alt=""
-            />
+            </div>
           </article>
+          </div>
         </div>
       </section>
-      <section id="formats" class="formats-section">
+      <section id="formats" class="formats-section section">
         <div class="container">
           <h2 class="section-title section-title-center">Формати</h2>
           <svg width="44" height="44">
@@ -188,7 +199,7 @@
           </div>
         </div>
       </section>
-      <section id="joinus" class="joinus-section">
+      <section id="joinus" class="joinus-section section">
         <div class="container">
           <h2 class="section-title section-title-center">Приєднуйся до мережі пекарень</h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
