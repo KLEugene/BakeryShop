@@ -91,7 +91,16 @@ ul {
 @media screen and (min-width: 768px) {
   .chef-card {
     gap: 30px;
+    padding-left: 100px;
     /*  flex-basis: calc((100% - 30px) / 2); */
+  }
+}
+.chef-card__text {
+  width: 162px;
+}
+@media screen and (min-width: 768px) {
+  .chef-card__text {
+    width: 334px;
   }
 }
 .chef-card__image {
@@ -178,6 +187,33 @@ ul {
     line-height: 84px;
     margin-bottom: 42px;
   }
+}
+
+.title-accent {
+  color: var(--color-brand-dark);
+}
+
+.chefs-section__title {
+  position: relative;
+}
+.chefs-section__title::before, .chefs-section__title::after {
+  content: "";
+  position: absolute;
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  bottom: 24px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .chefs-section__title::before, .chefs-section__title::after {
+    display: block;
+  }
+}
+.chefs-section__title::before {
+  left: 0;
+}
+.chefs-section__title::after {
+  right: 0;
 }
 
 .section-title-center {
@@ -317,6 +353,7 @@ ul {
   font-weight: 900;
   color: var(--color-primary-light);
   text-align: center;
+  line-height: 66px;
 }
 
 .hero-title__first {

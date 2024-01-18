@@ -10,6 +10,33 @@ margin-bottom: 24px;
     margin-bottom: 42px;
 }
 }
+
+.title-accent{
+    color: var(--color-brand-dark);
+}
+
+.chefs-section__title{
+    position: relative;
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        width: 352px;
+        border: 2px solid var(--color-brand-light);
+        bottom: 24px;
+        display: none;
+        @media screen and (min-width:768px) {
+            display: block;
+        }
+    }
+    &::before{
+    left: 0;
+    } 
+    &::after{
+    right: 0;
+    }
+}   
+
+
 .section-title-center{
     text-align: center;
 }
