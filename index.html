@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -132,13 +136,14 @@
       <section id="formats" class="formats-section section">
         <div class="container">
           <h2 class="section-title section-title-center">Формати</h2>
-          <svg width="44" height="44">
+          <div class="swiper">
+          <svg class="swiper-button-prev" width="44" height="44">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
-          <ul>
-            <li>
-              <article>
-                <img
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <article class="format-card">
+                <img class="format-card__image"
                   srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
                   src="./images/walrus.jpg"
                   alt=""
@@ -151,9 +156,9 @@
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <img
+            <li class="swiper-slide">
+              <article class="format-card">
+                <img class="format-card__image"
                   srcset="
                     ./images/horseshoe.jpg    1x,
                     ./images/horseshoe@2x.jpg 2x
@@ -169,9 +174,9 @@
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <img
+            <li class="swiper-slide">
+              <article class="format-card">
+                <img class="format-card__image"
                   srcset="
                     ./images/handlebar.jpg    1x,
                     ./images/handlebar@2x.jpg 2x
@@ -188,14 +193,15 @@
               </article>
             </li>
           </ul>
-          <svg width="44" height="44">
+          <svg class="swiper-button-next" width="44" height="44">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
-          <div>
+          <div class="swiper-pagination">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
+          </div>
           </div>
         </div>
       </section>
@@ -284,5 +290,7 @@
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

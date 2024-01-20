@@ -116,6 +116,24 @@ ul {
   }
 }
 
+.format-card {
+  width: 349px;
+  height: 444px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  justify-content: flex-end;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark));
+}
+.format-card__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
