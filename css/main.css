@@ -17,7 +17,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
 }
-@media screen and (min-width: var(--bp-tablet)) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 18px;
     font-weight: 400;
@@ -68,6 +68,27 @@ ul {
 .button:hover, .button:focus {
   background-color: transparent;
   color: var(--color-brand-dark);
+}
+
+.carusel-button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+}
+.carusel-button:hover {
+  fill: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
+}
+.carusel-button.prev {
+  transform: rotate(180deg);
 }
 
 .icon-button {
@@ -302,6 +323,31 @@ ul {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.format-section__title {
+  color: var(--color-primary-light);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.format-section__text {
+  color: var(--color-primary-light);
+  font-size: 14px;
+  font-weight: 300;
+}
+.format-section__button {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .format-section__button {
+    display: flex;
+  }
+}
+.format-section__slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .header {

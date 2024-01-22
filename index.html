@@ -136,10 +136,14 @@
       <section id="formats" class="formats-section section">
         <div class="container">
           <h2 class="section-title section-title-center">Формати</h2>
-          <div class="swiper">
-          <svg class="swiper-button-prev" width="44" height="44">
+          <div class="format-section__slider">
+          <button type="button" class="format-section__button carusel-button prev" > 
+          <svg class="swiper-button-prev" width="16" height="16">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
+          </button>   
+          <div class="swiper">
+          
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <article class="format-card">
@@ -148,8 +152,8 @@
                   src="./images/walrus.jpg"
                   alt=""
                 />
-                <h3>Walrus</h3>
-                <p>
+                <h3 class="format-section__title">Walrus</h3>
+                <p class="format-section__text">
                   Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири,
                   2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
                   місця: є
@@ -166,8 +170,8 @@
                   src="./images/horseshoe.jpg"
                   alt=""
                 />
-                <h3>Horseshoe</h3>
-                <p>
+                <h3 class="format-section__title">Horseshoe</h3>
+                <p class="format-section__text">
                   Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
                   продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
                   відсутні
@@ -184,8 +188,8 @@
                   src="./images/handlebar.jpg"
                   alt=""
                 />
-                <h3>Handlebar</h3>
-                <p>
+                <h3 class="format-section__title">Handlebar</h3>
+                <p class="format-section__text">
                   Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
                   продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
                   відсутні
@@ -193,15 +197,19 @@
               </article>
             </li>
           </ul>
-          <svg class="swiper-button-next" width="44" height="44">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
+          
           <div class="swiper-pagination">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </div>
+          </div>
+          <button type="button" class="format-section__button carusel-button">
+          <svg class="swiper-button-next" width="16" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+          </button>
           </div>
         </div>
       </section>
