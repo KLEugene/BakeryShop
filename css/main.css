@@ -87,7 +87,7 @@ ul {
   fill: var(--color-primary-light);
   background-color: var(--color-primary-dark);
 }
-.carusel-button.prev {
+.carusel-button.next {
   transform: rotate(180deg);
 }
 
@@ -138,8 +138,8 @@ ul {
 }
 
 .format-card {
-  width: 349px;
-  height: 444px;
+  width: 321px;
+  height: 442px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -147,6 +147,12 @@ ul {
   justify-content: flex-end;
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark));
+}
+@media screen and (min-width: 768px) {
+  .format-card {
+    width: 349px;
+    height: 444px;
+  }
 }
 .format-card__image {
   position: absolute;

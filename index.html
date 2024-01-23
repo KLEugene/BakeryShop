@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery Shop</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,10 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    
   </head>
   <body>
     <header class="header">
@@ -138,14 +139,14 @@
           <h2 class="section-title section-title-center">Формати</h2>
           <div class="format-section__slider">
           <button type="button" class="format-section__button carusel-button prev" > 
-          <svg class="swiper-button-prev" width="16" height="16">
+          <svg width="16" height="16">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
           </button>   
           <div class="swiper">
           
           <ul class="swiper-wrapper">
-            <li class="swiper-slide">
+            <li class="swiper-slider">
               <article class="format-card">
                 <img class="format-card__image"
                   srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
@@ -160,7 +161,7 @@
                 </p>
               </article>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slider">
               <article class="format-card">
                 <img class="format-card__image"
                   srcset="
@@ -178,7 +179,58 @@
                 </p>
               </article>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slider">
+              <article class="format-card">
+                <img class="format-card__image"
+                  srcset="
+                    ./images/handlebar.jpg    1x,
+                    ./images/handlebar@2x.jpg 2x
+                  "
+                  src="./images/handlebar.jpg"
+                  alt=""
+                />
+                <h3 class="format-section__title">Handlebar</h3>
+                <p class="format-section__text">
+                  Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                  продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                  відсутні
+                </p>
+              </article>
+            </li>
+            <li class="swiper-slider">
+              <article class="format-card">
+                <img class="format-card__image"
+                  srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
+                  src="./images/walrus.jpg"
+                  alt=""
+                />
+                <h3 class="format-section__title">Walrus</h3>
+                <p class="format-section__text">
+                  Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири,
+                  2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
+                  місця: є
+                </p>
+              </article>
+            </li>
+            <li class="swiper-slider">
+              <article class="format-card">
+                <img class="format-card__image"
+                  srcset="
+                    ./images/horseshoe.jpg    1x,
+                    ./images/horseshoe@2x.jpg 2x
+                  "
+                  src="./images/horseshoe.jpg"
+                  alt=""
+                />
+                <h3 class="format-section__title">Horseshoe</h3>
+                <p class="format-section__text">
+                  Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                  продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
+                  відсутні
+                </p>
+              </article>
+            </li>
+            <li class="swiper-slider">
               <article class="format-card">
                 <img class="format-card__image"
                   srcset="
@@ -199,14 +251,14 @@
           </ul>
           
           <div class="swiper-pagination">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
           </div>
           </div>
-          <button type="button" class="format-section__button carusel-button">
-          <svg class="swiper-button-next" width="16" height="16">
+          <button type="button" class="format-section__button carusel-button next">
+          <svg width="16" height="16">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
           </button>

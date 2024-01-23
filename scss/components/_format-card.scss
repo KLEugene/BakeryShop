@@ -1,18 +1,28 @@
-.format-card{
+.format-card {
+  width: 321px;
+  height: 442px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  justify-content: flex-end;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark)
+  );
+
+  @media screen and (min-width: 768px) {
     width: 349px;
     height: 444px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    justify-content: flex-end;
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark));
-&__image{
+  }
+  &__image {
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
+  }
 }
-}
-

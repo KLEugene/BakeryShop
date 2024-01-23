@@ -31,7 +31,7 @@ color: var(--color-brand-dark);
         fill: var(--color-primary-light);
         background-color: var(--color-primary-dark);
     }
-    &.prev{
+    &.next{
         transform: rotate(180deg);
     }
 } 
