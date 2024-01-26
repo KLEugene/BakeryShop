@@ -1,0 +1,15 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    &__button{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: var(--color-border-color);
+}
+&__button--active{
+    background-color: #73835A;
+}
+}

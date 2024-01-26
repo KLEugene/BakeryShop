@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery Shop</title>
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,54 +15,79 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-container">
-      <nav class="header__nav">
-        <a class="logo" href="/">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <ul class="header__menu">
-          <li><a href="#activities" class="link">Наші традиції</a></li>
-          <li><a href="#chefs" class="link">Шеф-кухарі</a></li>
-          <li><a href="#formats" class="link">Формати</a></li>
-          <li><a href="#joinus" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="button header__button">Замовити дзвінок</button>      
-      <button type="button" class="icon-button header__open-menu">
-        <svg width="24" heihgt="24">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <div class="mobile-menu">
-        <button type="button" class="icon-button mobile-menu__button--close">
-          <svg width="24" heihgt="24">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <a class="logo mobile-menu__logo" href="/">
-          <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <ul class="mobile-menu__list">
-          <li><a href="#activities" class="link mobile-menu__link">Наші традиції</a></li>
-          <li><a href="#chefs" class="link mobile-menu__link">Шеф-кухарі</a></li>
-          <li><a href="#formats" class="link mobile-menu__link">Формати</a></li>
-          <li><a href="#joinus" class="link mobile-menu__link">Контакти</a></li>
-        </ul>
-        <img class="mobile-menu__image" src="./images/bread.png" alt="Батон">
+          <nav class="header__nav">
+            <a class="logo" href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header__menu">
+              <li><a href="#activities" class="link">Наші традиції</a></li>
+              <li><a href="#chefs" class="link">Шеф-кухарі</a></li>
+              <li><a href="#formats" class="link">Формати</a></li>
+              <li><a href="#joinus" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button header__button">
+            Замовити дзвінок
+          </button>
+          <button type="button" class="icon-button header__open-menu">
+            <svg width="24" heihgt="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button
+              type="button"
+              class="icon-button mobile-menu__button--close"
+            >
+              <svg width="24" heihgt="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="logo mobile-menu__logo" href="/">
+              <img
+                src="./images/logo-dark.svg"
+                alt="Логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a href="#activities" class="link mobile-menu__link"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a href="#chefs" class="link mobile-menu__link">Шеф-кухарі</a>
+              </li>
+              <li>
+                <a href="#formats" class="link mobile-menu__link">Формати</a>
+              </li>
+              <li>
+                <a href="#joinus" class="link mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+            <img
+              class="mobile-menu__image"
+              src="./images/bread.png"
+              alt="Батон"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title"><span class="hero-title__first">Сучасна</span> пекарня</h1>
-          <button type="button" class="button hero-button">Замовити дзвінок</button>
+          <h1 class="hero-title">
+            <span class="hero-title__first">Сучасна</span> пекарня
+          </h1>
+          <button type="button" class="button hero-button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section id="achivmentsbar" class="achivmentsbar-section section">
@@ -70,67 +95,79 @@
         <div class="container">
           <ul class="achivmentsbar-section__list">
             <li class="achivmentsbar-list__item">Великий попит на ринку</li>
-            <li class="achivmentsbar-list__item">Доступні за бюджетом формати</li>
-            <li class="achivmentsbar-list__item">Досвідчена управлінська команда</li>
+            <li class="achivmentsbar-list__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="achivmentsbar-list__item">
+              Досвідчена управлінська команда
+            </li>
           </ul>
         </div>
       </section>
       <section id="activities" class="activities-section section">
         <div class="container">
           <div class="flex-wrap">
-          <div class="left-block">
-          <h2 class="section-title">Новий формат традицій</h2>
-          <p class="paragraph">
-            <span class="text-accent text-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак
-            традиційної випічки та натуральність інгредієнтів.
-          </p>
-          <p>
-            Ми працюємо як найвідоміші мережі— <span class="text-accent">5 хвилин і замовлення готове.</span> А
-            ще у наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          </div>
+            <div class="left-block">
+              <h2 class="section-title">Новий формат традицій</h2>
+              <p class="paragraph">
+                <span class="text-accent text-uppercase">shop bakery</span> — це
+                пекарня, яка взяла все найкраще, і зберегла смак традиційної
+                випічки та натуральність інгредієнтів.
+              </p>
+              <p>
+                Ми працюємо як найвідоміші мережі—
+                <span class="text-accent">5 хвилин і замовлення готове.</span> А
+                ще у наших пекарень стильний дизайн та висока якість
+                обслуговування!
+              </p>
+            </div>
 
-          <img class="image-bakerman"
-            srcset="./images/bakerman.jpg 1x, ./images/bakerman@2x.jpg 2x"
-            src="./images/bakerman.jpg"
-            alt="пекар везе батони і посміхається"
-          />
-        </div>
+            <img
+              class="image-bakerman"
+              srcset="./images/bakerman.jpg 1x, ./images/bakerman@2x.jpg 2x"
+              src="./images/bakerman.jpg"
+              alt="пекар везе батони і посміхається"
+            />
+          </div>
         </div>
       </section>
       <section id="chefs" class="chefs-section section">
         <div class="container">
-          <h2 class="section-title section-title-center  chefs-section__title">Наші найкращі<br /><span class="title-accent">шеф -кухарі</span></h2>
+          <h2 class="section-title section-title-center chefs-section__title">
+            Наші найкращі<br /><span class="title-accent">шеф -кухарі</span>
+          </h2>
           <div class="flex-wrap">
-          <article class="flex-wrap chef-card ">
-            <img class="chef-card__image"
-              srcset="./images/anastasia.jpg 1x, ./images/anastasia@2x.jpg 2x"
-              src="./images/anastasia.jpg"
-              alt=""
-            />
-            <div class="chef-card__text">
-            <h3>Настя</h3>
-            <p>Привіт, я Настя!</p>
-            <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-            <p>Я випічу для вас найсмачніщі вироби!</p>
-            </div>
-          </article>
-          <article class="flex-wrap chef-card">
-            <img class="chef-card__image"
-              srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
-              src="./images/vlad.jpg"
-              alt=""
-            />  
-            <div class="chef-card__text">
-            <h3>Влад</h3>
-            <p>Привіт, я Влад!</p>
-            <p>
-              Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з
-              якою ми ділимось кожен раз з Вами через нашу випічку!
-            </p>
-            <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-            </div>
-          </article>
+            <article class="flex-wrap chef-card">
+              <img
+                class="chef-card__image"
+                srcset="./images/anastasia.jpg 1x, ./images/anastasia@2x.jpg 2x"
+                src="./images/anastasia.jpg"
+                alt=""
+              />
+              <div class="chef-card__text">
+                <h3>Настя</h3>
+                <p>Привіт, я Настя!</p>
+                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+                <p>Я випічу для вас найсмачніщі вироби!</p>
+              </div>
+            </article>
+            <article class="flex-wrap chef-card">
+              <img
+                class="chef-card__image"
+                srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
+                src="./images/vlad.jpg"
+                alt=""
+              />
+              <div class="chef-card__text">
+                <h3>Влад</h3>
+                <p>Привіт, я Влад!</p>
+                <p>
+                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
+                </p>
+                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -138,136 +175,203 @@
         <div class="container">
           <h2 class="section-title section-title-center">Формати</h2>
           <div class="format-section__slider">
-          <button type="button" class="format-section__button carusel-button prev" > 
-          <svg width="16" height="16">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-          </button>   
-          <div class="swiper">
-          
-          <ul class="swiper-wrapper">
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
-                  src="./images/walrus.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Walrus</h3>
-                <p class="format-section__text">
-                  Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири,
-                  2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
-                  місця: є
-                </p>
-              </article>
-            </li>
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="
-                    ./images/horseshoe.jpg    1x,
-                    ./images/horseshoe@2x.jpg 2x
-                  "
-                  src="./images/horseshoe.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Horseshoe</h3>
-                <p class="format-section__text">
-                  Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
-                  продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
-                  відсутні
-                </p>
-              </article>
-            </li>
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="
-                    ./images/handlebar.jpg    1x,
-                    ./images/handlebar@2x.jpg 2x
-                  "
-                  src="./images/handlebar.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Handlebar</h3>
-                <p class="format-section__text">
-                  Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
-                  продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
-                  відсутні
-                </p>
-              </article>
-            </li>
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
-                  src="./images/walrus.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Walrus</h3>
-                <p class="format-section__text">
-                  Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири,
-                  2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
-                  місця: є
-                </p>
-              </article>
-            </li>
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="
-                    ./images/horseshoe.jpg    1x,
-                    ./images/horseshoe@2x.jpg 2x
-                  "
-                  src="./images/horseshoe.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Horseshoe</h3>
-                <p class="format-section__text">
-                  Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
-                  продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
-                  відсутні
-                </p>
-              </article>
-            </li>
-            <li class="swiper-slider">
-              <article class="format-card">
-                <img class="format-card__image"
-                  srcset="
-                    ./images/handlebar.jpg    1x,
-                    ./images/handlebar@2x.jpg 2x
-                  "
-                  src="./images/handlebar.jpg"
-                  alt=""
-                />
-                <h3 class="format-section__title">Handlebar</h3>
-                <p class="format-section__text">
-                  Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
-                  продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
-                  відсутні
-                </p>
-              </article>
-            </li>
-          </ul>
-          
-          <div class="swiper-pagination">
-            <span class="pagination__button"></span>
-            <span class="pagination__button"></span>
-            <span class="pagination__button"></span>
-            <span class="pagination__button"></span>
-          </div>
-          </div>
-          <button type="button" class="format-section__button carusel-button next">
-          <svg width="16" height="16">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-          </button>
+            <button
+              type="button"
+              class="format-section__button carusel-button prev"
+            >
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
+                      src="./images/walrus.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Walrus</h3>
+                    <p class="format-section__text">
+                      Площа: до 120 м2 Меню: розширене меню Штат: 2
+                      продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби Посадкові місця: є
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/horseshoe.jpg    1x,
+                        ./images/horseshoe@2x.jpg 2x
+                      "
+                      src="./images/horseshoe.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Horseshoe</h3>
+                    <p class="format-section__text">
+                      Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                      продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
+                      місця: відсутні
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/handlebar.jpg    1x,
+                        ./images/handlebar@2x.jpg 2x
+                      "
+                      src="./images/handlebar.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Handlebar</h3>
+                    <p class="format-section__text">
+                      Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                      продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                      відсутні
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
+                      src="./images/walrus.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Walrus</h3>
+                    <p class="format-section__text">
+                      Площа: до 120 м2 Меню: розширене меню Штат: 2
+                      продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби Посадкові місця: є
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/horseshoe.jpg    1x,
+                        ./images/horseshoe@2x.jpg 2x
+                      "
+                      src="./images/horseshoe.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Horseshoe</h3>
+                    <p class="format-section__text">
+                      Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                      продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
+                      місця: відсутні
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/handlebar.jpg    1x,
+                        ./images/handlebar@2x.jpg 2x
+                      "
+                      src="./images/handlebar.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Handlebar</h3>
+                    <p class="format-section__text">
+                      Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                      продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                      відсутні
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x"
+                      src="./images/walrus.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Walrus</h3>
+                    <p class="format-section__text">
+                      Площа: до 120 м2 Меню: розширене меню Штат: 2
+                      продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби Посадкові місця: є
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/horseshoe.jpg    1x,
+                        ./images/horseshoe@2x.jpg 2x
+                      "
+                      src="./images/horseshoe.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Horseshoe</h3>
+                    <p class="format-section__text">
+                      Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                      продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові
+                      місця: відсутні
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      srcset="
+                        ./images/handlebar.jpg    1x,
+                        ./images/handlebar@2x.jpg 2x
+                      "
+                      src="./images/handlebar.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-section__title">Handlebar</h3>
+                    <p class="format-section__text">
+                      Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                      продавець, 1 пекар, 1 помічник пекаря Посадкові місця:
+                      відсутні
+                    </p>
+                  </article>
+                </li>
+              </ul>
+
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="format-section__button carusel-button next"
+            >
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section id="joinus" class="joinus-section section">
         <div class="container">
-          <h2 class="section-title section-title-center">Приєднуйся до мережі пекарень</h2>
+          <h2 class="section-title section-title-center">
+            Приєднуйся до мережі пекарень
+          </h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
           <form>
             <label for="name"></label
@@ -312,8 +416,9 @@
         >
         <a href="">
           <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-facebook"></use></svg>
-          </a>
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
         <a href="">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-instagram"></use>
@@ -324,9 +429,12 @@
       <p>&copy; 2022 Дані захищені</p>
     </footer>
     <div class="backdrop is-hidden modal">
-      
       <div class="modal_content">
-        <button type="button" class="icon-button mobile-menu__button--close" data-modal-close>
+        <button
+          type="button"
+          class="icon-button mobile-menu__button--close"
+          data-modal-close
+        >
           <svg width="24" heihgt="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>

@@ -274,6 +274,22 @@ ul {
   }
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pagination__button {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: var(--color-border-color);
+}
+.pagination__button--active {
+  background-color: #73835A;
+}
+
 .text-accent {
   color: var(--color-brand-normal);
   font-weight: 600;

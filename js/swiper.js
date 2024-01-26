@@ -1,7 +1,8 @@
 var swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
   loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  
 
   // Responsive breakpoints
   breakpoints: {
@@ -21,11 +22,11 @@ var swiper = new Swiper(".swiper", {
     prevEl: ".carusel-button.prev",
   },
   pagination: {
-    el: ".swiper-pagination",
-    bulletClass: ".pagination__button",
-    bulletActiveClass: ".pagination__button--active",
+    el: ".pagination",
+    bulletClass: "pagination__button",
+    bulletActiveClass: "pagination__button--active",
     clickable: true,
   },
 });
-
-swiper.init();
+console.dir(swiper)
+//swiper.init();
