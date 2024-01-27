@@ -184,8 +184,8 @@
               </svg>
             </button>
             <div class="swiper">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slider">
+              <ul class="swiper-wrapper format-section__list">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -201,7 +201,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -220,7 +220,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -239,7 +239,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -255,7 +255,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -274,7 +274,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -293,7 +293,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -309,7 +309,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -328,7 +328,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slider">
+                <li class="swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -369,23 +369,26 @@
       </section>
       <section id="joinus" class="joinus-section section">
         <div class="container">
-          <h2 class="section-title section-title-center">
+        <div class="flex-wrape">
+        <div>
+          <h2 class="section-title joinus-section__title">
             Приєднуйся до мережі пекарень
           </h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <form>
+          <p class="joinus-section__text">Заповни форму, щоб ми звʼязались з тобою!</p>
+          <form class="joinus-section__form">
             <label for="name"></label
-            ><input id="name" name="name" placeholder="Ім’я" />
+            ><input class="joinus-section__input" id="name" name="name" placeholder="Ім’я" />
             <label for="phone"></label
-            ><input id="phone" name="phone" placeholder="Телефон" />
+            ><input class="joinus-section__input" id="phone" name="phone" placeholder="Телефон" />
             <label for="email"></label
-            ><input id="email" name="email" placeholder="Електронна пошта" />
-            <button type="button" class="button">Замовити дзвінок</button>
-            <p>
+            ><input class="joinus-section__input" id="email" name="email" placeholder="Електронна пошта" />
+            <button type="button" class="button joinus-section__button">Замовити дзвінок</button>
+            <p class="joinus-section__agree">
               Натискаючи на кнопку я погоджуюсь з
               <a href="#">політикою конфіденційності</a>
             </p>
           </form>
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.164054656815!2d30.488658576478905!3d50.45666967159328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2suk!4v1703012753932!5m2!1sen!2suk"
             width="600"
@@ -394,6 +397,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+        </div>
         </div>
       </section>
     </main>
