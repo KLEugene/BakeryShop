@@ -3,36 +3,56 @@
 
 
 &__form{
-    width: 604px;
+    
     display: flex;
     align-items: center;
     flex-direction: column;
     
     
 }
+}
 
 &__title{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        margin-bottom: 16px;
+    }
 }
 
 &__text{
-    margin-bottom: 42px;
+    font-size: 14px;
     color: var(--color-brand-dark);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 24px;
+    @media screen and (min-width:768px) {
+    
+     margin-bottom: 42px;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    }
+
 }
 
 &__input{
     width: 100%;
-    padding: 16px 42px;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 300;
     line-height: normal;
     border-radius: 8px;
     border: 1px solid var(--color-border-color);
     background-color: inherit;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    @media screen and (min-width:768px) {
+        padding: 16px 42px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
 }
 
 &__button{
@@ -47,5 +67,25 @@
     font-weight: 400;
     line-height: normal;
 }
+
+&__map{
+    width: 320px;
+    height: 176px;
+    transform: translateX(-20px);
+    @media screen and (min-width:768px) {
+    width: 604px;
+    height: 596px;
+    border-radius: 16px;
+    transform: translateX(0);
+    }
+}
+
+&__leftblock{
+    width: 100%;
+    @media screen and (min-width:768px) {
+        width: 606px;
+    }
+}
+
 
 }

@@ -171,8 +171,13 @@ ul {
 }
 
 .flex-wrape {
-  display: flex;
-  gap: 32px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .flex-wrape {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 .mobile-menu {
@@ -434,31 +439,59 @@ ul {
 }
 
 .joinus-section__form {
-  width: 604px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+.joinus-section__form .joinus-section__map {
+  width: 320px;
+  height: 176px;
+  /* position: relative; */
+  /* left: 0; */
+}
 .joinus-section__title {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .joinus-section__title {
+    margin-bottom: 16px;
+  }
 }
 .joinus-section__text {
-  margin-bottom: 42px;
+  font-size: 14px;
   color: var(--color-brand-dark);
-  font-size: 18px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
   line-height: normal;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .joinus-section__text {
+    margin-bottom: 42px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .joinus-section__input {
   width: 100%;
-  padding: 16px 42px;
-  font-size: 18px;
-  font-weight: 400;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: normal;
   border-radius: 8px;
   border: 1px solid var(--color-border-color);
   background-color: inherit;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .joinus-section__input {
+    padding: 16px 42px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
 }
 .joinus-section__button {
   margin-bottom: 16px;
@@ -470,6 +503,26 @@ ul {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+}
+.joinus-section__map {
+  width: 320px;
+  height: 176px;
+  transform: translateX(-20px);
+}
+@media screen and (min-width: 768px) {
+  .joinus-section__map {
+    width: 604px;
+    height: 596px;
+    border-radius: 16px;
+  }
+}
+.joinus-section__leftblock {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .joinus-section__leftblock {
+    width: 606px;
+  }
 }
 
 .hero-section {
