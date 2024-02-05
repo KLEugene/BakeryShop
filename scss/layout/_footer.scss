@@ -29,6 +29,16 @@
         width:92px;
         height: 196px;
         background-image: url(../../images/bred-left.png);
+        @media screen and (min-width:768px) {
+            background-image: url(../../images/bred-left-desc.png);
+        left:0;
+        top:auto;
+        right: auto;
+        bottom: 0;
+        width: 180px;
+        height: 120px;
+        }
+        
     }
 
     &::after{
@@ -37,6 +47,16 @@
         right: -8px;
         bottom: 0;
         background-image: url(../../images/bred-right.png);
+        @media screen and (min-width:768px) {
+            background-image: url(../../images/bred-right-desc.png);
+        right: 0;
+        bottom: 0;
+        top:auto;
+        left:auto;
+        width: 380px;
+        height: 190px;
+        }
+        
     }
 
 
@@ -50,6 +70,11 @@
         align-items: center;
         text-align: center;
         gap:18px;
+        @media screen and (min-width:768px) {
+            align-items: flex-start;
+        }
+            
+        
     }
 
     &__menu{
@@ -57,6 +82,9 @@
         flex-direction: column;
         gap:16px;
         align-items: center;
+        @media screen and (min-width:768px) {
+            align-items: flex-start;
+        }
     }
 
     &__navigation{
@@ -67,6 +95,7 @@
         @media screen and (min-width:768px) {
             flex-direction: row;
             gap:166px;
+            align-items: flex-start;
         }
     }
 
@@ -85,6 +114,9 @@
         flex-direction: column;
         align-items: center;
         gap:8px;
+        @media screen and (min-width:768px) {
+            align-items: flex-start;
+        }
     }
 
     &__copyright > p{margin-bottom: 0;}

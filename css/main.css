@@ -469,12 +469,34 @@ ul {
   height: 196px;
   background-image: url(../../images/bred-left.png);
 }
+@media screen and (min-width: 768px) {
+  .footer-section::before {
+    background-image: url(../../images/bred-left-desc.png);
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    width: 180px;
+    height: 120px;
+  }
+}
 .footer-section::after {
   width: 111px;
   height: 88px;
   right: -8px;
   bottom: 0;
   background-image: url(../../images/bred-right.png);
+}
+@media screen and (min-width: 768px) {
+  .footer-section::after {
+    background-image: url(../../images/bred-right-desc.png);
+    right: 0;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    width: 380px;
+    height: 190px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-section {
@@ -488,11 +510,21 @@ ul {
   text-align: center;
   gap: 18px;
 }
+@media screen and (min-width: 768px) {
+  .footer-section__address {
+    align-items: flex-start;
+  }
+}
 .footer-section__menu {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-section__menu {
+    align-items: flex-start;
+  }
 }
 .footer-section__navigation {
   display: flex;
@@ -504,6 +536,7 @@ ul {
   .footer-section__navigation {
     flex-direction: row;
     gap: 166px;
+    align-items: flex-start;
   }
 }
 .footer-section__policy {
@@ -520,12 +553,24 @@ ul {
   align-items: center;
   gap: 8px;
 }
+@media screen and (min-width: 768px) {
+  .footer-section__copyright {
+    align-items: flex-start;
+  }
+}
 .footer-section__copyright > p {
   margin-bottom: 0;
 }
 
 .joinus-section {
   margin-bottom: 0;
+  position: relative;
+  padding-bottom: 176px;
+}
+@media screen and (min-width: 768px) {
+  .joinus-section {
+    padding-bottom: 0;
+  }
 }
 .joinus-section__form {
   display: flex;
@@ -588,16 +633,18 @@ ul {
   line-height: normal;
 }
 .joinus-section__map {
-  width: 320px;
+  width: 100%;
   height: 176px;
-  transform: translateX(-20px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 @media screen and (min-width: 768px) {
   .joinus-section__map {
     width: 604px;
     height: 596px;
     border-radius: 16px;
-    transform: translateX(0);
+    position: static;
   }
 }
 .joinus-section__leftblock {
