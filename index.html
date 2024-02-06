@@ -465,7 +465,7 @@
       </div>
     </footer>
     <div class="backdrop is-hidden modal">
-      <div class="modal_content">
+      <div class="modal__content">
         <button
           type="button"
           class="icon-button mobile-menu__button--close"
@@ -475,19 +475,19 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__feedback">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form class="modal__form">
           <label for="name"></label
           ><input id="name" name="name" placeholder="Ім’я" />
           <label for="phone"></label
           ><input id="phone" name="phone" placeholder="Телефон" />
           <label for="email"></label
           ><input id="email" name="email" placeholder="Електронна пошта" />
-          <button type="button" class="button">Замовити дзвінок</button>
-          <p>
+          <button type="button" class="button" data-modal-close>Замовити дзвінок</button>
+          <p class="modal__policy">
             Натискаючи на кнопку я погоджуюсь з
-            <a href="#">політикою конфіденційності</a>
+            <a class="link" href="#">політикою конфіденційності</a>
           </p>
         </form>
       </div>

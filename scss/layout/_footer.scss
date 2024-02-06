@@ -1,7 +1,7 @@
 .footer-section{
     position: relative;
     background-color: var(--color-primary-dark);
-    background-image: url('../../images/footer-bg.png');
+    background-image: url('../images/footer-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,9 +28,9 @@
         left:-4px;
         width:92px;
         height: 196px;
-        background-image: url(../../images/bred-left.png);
+        background-image: url(../images/bred-left.png);
         @media screen and (min-width:768px) {
-            background-image: url(../../images/bred-left-desc.png);
+            background-image: url(../images/bred-left-desc.png);
         left:0;
         top:auto;
         right: auto;
@@ -46,9 +46,9 @@
         height: 88px;
         right: -8px;
         bottom: 0;
-        background-image: url(../../images/bred-right.png);
+        background-image: url(../images/bred-right.png);
         @media screen and (min-width:768px) {
-            background-image: url(../../images/bred-right-desc.png);
+            background-image: url(../images/bred-right-desc.png);
         right: 0;
         bottom: 0;
         top:auto;

@@ -441,7 +441,7 @@ ul {
 .footer-section {
   position: relative;
   background-color: var(--color-primary-dark);
-  background-image: url("../../images/footer-bg.png");
+  background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -467,11 +467,11 @@ ul {
   left: -4px;
   width: 92px;
   height: 196px;
-  background-image: url(../../images/bred-left.png);
+  background-image: url(../images/bred-left.png);
 }
 @media screen and (min-width: 768px) {
   .footer-section::before {
-    background-image: url(../../images/bred-left-desc.png);
+    background-image: url(../images/bred-left-desc.png);
     left: 0;
     top: auto;
     right: auto;
@@ -485,11 +485,11 @@ ul {
   height: 88px;
   right: -8px;
   bottom: 0;
-  background-image: url(../../images/bred-right.png);
+  background-image: url(../images/bred-right.png);
 }
 @media screen and (min-width: 768px) {
   .footer-section::after {
-    background-image: url(../../images/bred-right-desc.png);
+    background-image: url(../images/bred-right-desc.png);
     right: 0;
     bottom: 0;
     top: auto;
@@ -747,4 +747,46 @@ ul {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal__content {
+  border-radius: 32px;
+  width: 880px;
+  height: 880px;
+  background: var(--color-primary-light);
+  padding: 128px;
+  position: relative;
+}
+.modal__title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 131%;
+  text-align: center;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+.modal__form {
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.modal__policy {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 146%;
+  text-align: center;
+  color: var(--color-primary-dark);
+}
+.modal__policy > a {
+  text-decoration: underline;
+}
+.modal__feedback {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-brand-dark);
+  margin-bottom: 72px;
 }/*# sourceMappingURL=main.css.map */
