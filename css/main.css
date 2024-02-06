@@ -658,7 +658,7 @@ ul {
 
 .hero-section {
   padding: 122px 0 22px;
-  background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../../images/hero.jpg");
+  background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
