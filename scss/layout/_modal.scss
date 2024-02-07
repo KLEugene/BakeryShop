@@ -31,7 +31,7 @@
   &__title{
   
   font-weight: 900;
-  font-size: 64px;
+  font-size: 62px;
   line-height: 131%;
   text-align: center;
   color: var(--color-primary-dark);
@@ -55,7 +55,10 @@
   text-align: center;
   color: var(--color-primary-dark);
   }
-  &__policy > a{text-decoration: underline;}
+  &__policy > a{
+    text-decoration: underline;
+    color: var(--color-primary-dark);
+  }
 
   &__feedback{
     font-weight: 400;

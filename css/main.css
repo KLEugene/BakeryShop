@@ -275,6 +275,46 @@ ul {
   text-align: center;
 }
 
+.feedback-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback-form__input {
+  width: 100%;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-color);
+  background-color: inherit;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .feedback-form__input {
+    padding: 16px 42px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+}
+.feedback-form__button {
+  margin-bottom: 16px;
+}
+.feedback-form__agree {
+  width: 240px;
+  color: var(--color-primary-dark);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.feedback-form__agree > a {
+  text-decoration: underline;
+  color: var(--color-primary-dark);
+}
+
 .section {
   margin-bottom: 40px;
 }
@@ -692,6 +732,11 @@ ul {
   }
 }
 
+.hero-button > a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
 .achivmentsbar-section {
   padding: 24px 40px;
   border-radius: 24px;
@@ -759,7 +804,7 @@ ul {
 }
 .modal__title {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 62px;
   line-height: 131%;
   text-align: center;
   color: var(--color-primary-dark);
@@ -782,6 +827,7 @@ ul {
 }
 .modal__policy > a {
   text-decoration: underline;
+  color: var(--color-primary-dark);
 }
 .modal__feedback {
   font-weight: 400;

@@ -86,7 +86,7 @@
             <span class="hero-title__first">Сучасна</span> пекарня
           </h1>
           <button type="button" class="button hero-button">
-            Замовити дзвінок
+            <a href="#joinus">Замовити дзвінок</a>            
           </button>
         </div>
       </section>
@@ -137,7 +137,7 @@
             Наші найкращі<br /><span class="title-accent">шеф -кухарі</span>
           </h2>
           <div class="flex-wrap">
-            <article class="flex-wrap chef-card">
+            <article class="chef-card">
               <img
                 class="chef-card__image"
                 srcset="./images/anastasia.jpg 1x, ./images/anastasia@2x.jpg 2x"
@@ -151,7 +151,7 @@
                 <p>Я випічу для вас найсмачніщі вироби!</p>
               </div>
             </article>
-            <article class="flex-wrap chef-card">
+            <article class="chef-card">
               <img
                 class="chef-card__image"
                 srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
@@ -477,15 +477,15 @@
         </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
         <p class="modal__feedback">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form class="modal__form">
+        <form class="feedback-form">
           <label for="name"></label
-          ><input id="name" name="name" placeholder="Ім’я" />
+          ><input id="name" name="name" class="feedback-form__input" placeholder="Ім’я" />
           <label for="phone"></label
-          ><input id="phone" name="phone" placeholder="Телефон" />
+          ><input id="phone" name="phone" class="feedback-form__input" placeholder="Телефон" />
           <label for="email"></label
-          ><input id="email" name="email" placeholder="Електронна пошта" />
-          <button type="button" class="button" data-modal-close>Замовити дзвінок</button>
-          <p class="modal__policy">
+          ><input id="email" name="email" class="feedback-form__input" placeholder="Електронна пошта" />
+          <button type="button" class="button feedback-form__button" data-modal-close>Замовити дзвінок</button>
+          <p class="feedback-form__agree">
             Натискаючи на кнопку я погоджуюсь з
             <a class="link" href="#">політикою конфіденційності</a>
           </p>
